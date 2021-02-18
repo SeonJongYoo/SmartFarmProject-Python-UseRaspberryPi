@@ -18,6 +18,10 @@
   - Reads: Temperature
   - Range: -126.000 °C − 1254 °C
   <img src="image/rtd.PNG" width="200">
+## Sensor 사용방법
+### 필요 물품: 보드(RaspberryPi or Arduino), Jumper Cable, Bread Board
+* 통신 방식 변경
+  - UART -> I2C
 ## Firebase 사용
 * 센서들로부터 읽어들인 데이터를 Firebase에 저장
   - 12시 ~ 18시: 5분 단위로 데이터를 Firebase에 저장
@@ -27,3 +31,4 @@
 2. Wifi 설정
     - 이미 등록된 Wifi가 있다면 몇초간 대기후 센서로부터 읽은 데이터를 Firebase에 데이터를 등록함
     - 등록된 Wifi가 없다면 Wifi 등록을 위한 ID와 PW를 입력하고 자동으로 재부팅함
+<img src="image/WayToRun.PNG" width="800">
