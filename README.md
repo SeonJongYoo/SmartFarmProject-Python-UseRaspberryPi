@@ -18,6 +18,19 @@
   - Reads: Temperature
   - Range: -126.000 °C − 1254 °C
   <img src="image/rtd.PNG" width="200">
+* CO2
+  - 대기 중 CO2
+  - CO2 측정을 위해 IR light(적외선) 사용
+  - 대기 중 CO2를 측정하는 것으로 물에 담그지 말 것!
+  - Reads: Gaseous CO2
+  - Range: 0 - 10,000 ppm
+  <img src="image/co2.PNG" width="200">
+* HUM
+  - 습도
+  - 물속에서는 값이 100%로 return
+  - Reads: Relative humidity, Dew point, Air temperaute
+  - Range: 0 - 100%
+  <img src="image/hum.PNG" width="200">
 ## Sensor 사용방법
 ### 필요 물품: 보드(RaspberryPi or Arduino), Jumper Cable, Bread Board
 * 통신 방식 변경
