@@ -48,6 +48,7 @@
   - pH, EC Sensor: Breadboard에서 점퍼 케이블로 TX와 PGND를 연결
   - RTD Sensor: Breadboard에서 점퍼 케이블로 TX와 PRB를 연결
   - CO2, HUM, PMP Sensor: Breadboard에서 점퍼 케이블로 TX(초록색 선)와 INT(파란색 선)를 연결
+  - 관련 링크: https://www.instructables.com/UART-AND-I2C-MODE-SWITCHING-FOR-ATLAS-SCIENTIFIC-E/
 ## Firebase 사용
 * 센서들로부터 읽어들인 데이터를 Firebase에 저장
   - 12시 ~ 18시: 5분 단위로 데이터를 Firebase에 저장
