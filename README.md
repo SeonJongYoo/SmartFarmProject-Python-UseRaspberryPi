@@ -1,4 +1,4 @@
-# SmartFarmProject
+# SmartFarmProject - Embedded
 ### 주제: 센서와 Raspberry Pi를 사용하여 농작물 재배 자동화
 ## Sensor
 * pH
