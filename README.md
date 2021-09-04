@@ -45,17 +45,19 @@
 ## Sensor 사용방법
 ### 필요 물품: 보드(RaspberryPi or Arduino), Jumper Cable, Bread Board
 * 통신 방식 변경: UART -> I2C
+  - 모든 센서는 I2C 모드에서 사용이 가능하다.
   - pH, EC Sensor: Breadboard에서 점퍼 케이블로 TX와 PGND를 연결
   - RTD Sensor: Breadboard에서 점퍼 케이블로 TX와 PRB를 연결
   - CO2, HUM, PMP Sensor: Breadboard에서 점퍼 케이블로 TX(초록색 선)와 INT(파란색 선)를 연결
   - 관련 링크: https://www.instructables.com/UART-AND-I2C-MODE-SWITCHING-FOR-ATLAS-SCIENTIFIC-E/
-## Firebase 사용
+## 서버
+* Firebase 사용
 * 센서들로부터 읽어들인 데이터를 Firebase에 저장
   - 12시 ~ 18시: 5분 단위로 데이터를 Firebase에 저장
   - 이외 시간: 30분 단위로 데이터를 Firebase에 저장
 ## 작동 원리
-1. Raspberry Pi의 전원이 켜지면 Wifi 설정 터미널이 실행됨
+1. Raspberry Pi의 전원이 켜지면 Wifi 설정 터미널이 실행된다.
 2. Wifi 설정
-    - 이미 등록된 Wifi가 있다면 몇 초간 대기 후 센서로부터 읽은 데이터를 Firebase에 데이터를 등록함
-    - 등록된 Wifi가 없다면 Wifi 등록을 위한 ID와 PW를 입력하고 자동으로 재부팅함
+    - 이미 등록된 Wifi가 있다면 몇 초간 대기 후 센서로부터 읽은 데이터를 Firebase에 데이터를 등록한다.
+    - 등록된 Wifi가 없다면 Wifi 등록을 위한 ID와 PW를 입력하고 자동으로 재부팅하고 위 과정을 진행한다.
 <img src="image/WayToRun.PNG" width="800">
